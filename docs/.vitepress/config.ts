@@ -2,10 +2,20 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "rainly",
+  title: "Rain Blog",
   description: "record something",
+  markdown: {
+    // https://vitepress.dev/reference/markdown
+    lineNumbers: true
+  },
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    lastUpdatedText: "上次更新时间",
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇"
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
@@ -26,15 +36,26 @@ export default defineConfig({
         ]
       },
       {
-        text: '前端',
+        text: "框架",
         items: [
-          { text: 'flutter', link: '/frontend/flutter/' }
+          {
+            text: '前端',
+            items: [
+              { text: 'flutter', link: '/frontend/flutter/' }
+            ]
+          },
+          {
+            text: '后端',
+            items: [
+              { text: 'node', link: '/frontend/flutter/' }
+            ]
+          },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/ajin1147' }
     ]
   }
 })
