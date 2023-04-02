@@ -120,3 +120,21 @@
   transition: color 0.25s;
 }
 
+
+
+/* 自定义 */
+/* @media (min-width: 1260px) {
+  .content {
+    min-width: 640px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .aside {
+    display: block !important;
+  }
+  .VPDocOutlineDropdown {
+    display: none !important;
+  }
+} */

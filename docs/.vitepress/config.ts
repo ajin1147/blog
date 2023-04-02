@@ -1,25 +1,46 @@
 import { defineConfig } from 'vitepress'
 
+import sidebar from './sidebar'
+import nav from './nav'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  outDir: '../dist',
   title: "Rain Blog",
+  lang: "zh-CN",
   description: "record something",
+
   markdown: {
-    // https://vitepress.dev/reference/markdown
     lineNumbers: true
   },
+
   lastUpdated: true,
+  cleanUrls: true,
+
   themeConfig: {
+    i18nRouting: false,
+
+    logo: '/logo.png',
+
+    /* 右侧大纲配置 */
+    outline: {
+      level: 'deep',
+      label: '目录'
+    },
+
     // https://vitepress.dev/reference/default-theme-config
-    lastUpdatedText: "上次更新时间",
+    darkModeSwitchLabel: '外观',
+    returnToTopLabel: '返回顶部',
+    lastUpdatedText: '上次更新',
+
     docFooter: {
       prev: "上一篇",
       next: "下一篇"
     },
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+
+    nav,
+    sidebar,
+
     // 开启algolia配置
     algolia: {
       appId: "B715XDB1V3",
@@ -27,32 +48,12 @@ export default defineConfig({
       indexName: "rain_blog",
       placeholder: '请输入关键词'
     },
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: "框架",
-        items: [
-          {
-            text: '前端',
-            items: [
-              { text: 'flutter', link: '/frontend/flutter/' }
-            ]
-          },
-          {
-            text: '后端',
-            items: [
-              { text: 'node', link: '/frontend/flutter/' }
-            ]
-          },
-        ]
-      }
-    ],
+    
+
+    footer: {
+      message: 'be someone',
+      copyright: 'Copyright © 2023 - ∞'
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ajin1147' }

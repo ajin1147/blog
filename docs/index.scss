@@ -1,0 +1,24 @@
+.r-home-layout {
+  --layout-max-width: 1660px;
+
+  .container {
+    max-width: var(--layout-max-width) !important;
+  }
+  .content-container,
+  .content {
+    max-width: 100% !important;
+  }
+
+  // 适应27寸分屏
+  @media (min-width: 1260px) {
+    .content {
+      min-width: 640px;
+    }
+    .aside {
+      display: block;
+    }
+    .VPDocOutlineDropdown {
+      display: none !important;
+    }
+  }
+}
