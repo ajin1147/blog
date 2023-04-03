@@ -15,7 +15,7 @@ export default defineConfig({
   },
 
   lastUpdated: true,
-  cleanUrls: true,
+  // cleanUrls: true,
 
   themeConfig: {
     i18nRouting: false,
