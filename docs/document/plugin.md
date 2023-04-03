@@ -19,6 +19,16 @@ npx npkill
 # 请在cmd 或 powershell 中使用
 npkill
 ```
+### patch-package
+修改node_modules中的包，然后打补丁
+```bash
+npm install patch-package
+# 修改node_modules中的包以后，执行
+npx patch-package 包名
+# 会在项目根目录生成patches文件夹，里面有一个补丁文件
+# 之后在package.json中script添加命令 "postinstall": "patch-package"
+# 之后执行npm install，会自动打补丁
+```
 ### depcheck
 检查项目中缺少的依赖包以及没有使用到的依赖包
 ```bash

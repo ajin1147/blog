@@ -123,6 +123,24 @@
 
 
 /* 自定义 */
+.VPDoc.has-aside .content-container {
+  max-width: none !important;
+}
+.VPDoc > .container {
+  @media (min-width: 1240px) {
+    display: flex;
+    > .aside{
+      display: block !important;
+    }
+    .VPDocOutlineDropdown {
+      display: none !important;
+    }
+  }
+}
+.VPDoc > .container > .content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 /* @media (min-width: 1260px) {
   .content {
     min-width: 640px;

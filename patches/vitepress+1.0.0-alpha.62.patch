@@ -1,0 +1,13 @@
+diff --git a/node_modules/vitepress/dist/client/theme-default/composables/aside.js b/node_modules/vitepress/dist/client/theme-default/composables/aside.js
+index 8415580..312c39e 100644
+--- a/node_modules/vitepress/dist/client/theme-default/composables/aside.js
++++ b/node_modules/vitepress/dist/client/theme-default/composables/aside.js
+@@ -4,7 +4,7 @@ import { useSidebar } from './sidebar';
+ export function useAside() {
+     const { hasSidebar } = useSidebar();
+     const is960 = useMediaQuery('(min-width: 960px)');
+-    const is1280 = useMediaQuery('(min-width: 1280px)');
++    const is1280 = useMediaQuery('(min-width: 1240px)');
+     const isAsideEnabled = computed(() => {
+         if (!is1280.value && !is960.value) {
+             return false;

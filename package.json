@@ -5,10 +5,12 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@mdit-vue/shared": "^0.12.0",
+    "patch-package": "^6.5.1",
     "sass": "^1.60.0",
     "unplugin-auto-import": "^0.15.2",
     "vue": "^3.2.47"

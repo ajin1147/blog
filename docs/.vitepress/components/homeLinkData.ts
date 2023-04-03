@@ -83,6 +83,23 @@ export const homeLinkData: LinkGroup[] =  [
     ]
   },
   {
+    title: '刷题',
+    children: [
+      {
+        icon: 'https://leetcode.cn/favicon.ico',
+        title: 'LeeCode',
+        desc: '刷题网站',
+        link: 'https://leetcode.cn'
+      },
+      {
+        icon: '//jsn.lintcode.com/static/img/favicon.ico',
+        title: 'lintcode',
+        desc: '刷题网站',
+        link: 'https://www.lintcode.com'
+      },
+    ]
+  },
+  {
     title: 'Flutter 生态',
     children: [
       {

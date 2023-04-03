@@ -11,6 +11,10 @@ export default {
           text: "flutter",
           items: [
             {
+              text: "文档",
+              link: "/document/frontend/flutter/",
+            },
+            {
               text: "组件速查",
               link: "/document/frontend/flutter/componentsReference",
             },
