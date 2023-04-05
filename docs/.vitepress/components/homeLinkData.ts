@@ -13,7 +13,7 @@ type LinkGroup = {
 
 export const homeLinkData: LinkGroup[] =  [
   {
-    title: '工具箱',
+    title: '查询及工具',
     children: [
       {
         icon: 'https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png',
@@ -32,6 +32,12 @@ export const homeLinkData: LinkGroup[] =  [
         title: 'Can I use',
         desc: '前端 API 兼容性查询',
         link: 'https://caniuse.com'
+      },
+      {
+        icon: '',
+        title: 'markdown',
+        desc: 'markdown官方文档',
+        link: "https://markdown.com.cn/",
       },
       {
         icon: 'https://quickref.me/images/favicon.png?v=1',
@@ -56,6 +62,12 @@ export const homeLinkData: LinkGroup[] =  [
         title: "favicon",
         desc: "在线制作、转换favicon",
         link: "https://favicon.io",
+      },
+      {
+        icon: 'https://assets.vercel.com/image/upload/front/favicon/vercel/safari-pinned-tab.svg',
+        title: 'vercel',
+        desc: '部署应用云平台',
+        link: 'https://vercel.com/dashboard'
       }
     ]
   },
@@ -77,8 +89,86 @@ export const homeLinkData: LinkGroup[] =  [
       {
         icon: 'https://www.midjourney.com/apple-touch-icon.png',
         title: 'Midjourney',
-        desc: '基于 AI 的绘画工具',
+        desc: '基于 AI 的在线绘画工具',
         link: 'https://www.midjourney.com'
+      },
+      {
+        icon: 'https://stablediffusionweb.com/favicon.ico',
+        title: 'Stable Diffusion',
+        desc: '基于 AI 的绘画工具，可本地部署',
+        link: 'https://stablediffusionweb.com'
+      },
+      {
+        icon: '',
+        title: 'Vall-E',
+        desc: '基于 AI 的语音合成工具',
+        link: 'https://vall-e.io'
+      },
+      {
+        icon: 'https://studio.d-id.com/favicon/favicon-192x192.png',
+        title: 'Studio D-ID',
+        desc: '基于 AI 的图转视频工具',
+        link: 'https://studio.d-id.com'
+      },
+      {
+        icon: 'https://runwayml.com/icons/favicon-32x32.png',
+        title: 'runway',
+        desc: '视频特效工具',
+        link: 'https://runwayml.com'
+      },
+      {
+        icon: 'https://azure.microsoft.com/favicon.ico?v2',
+        title: '微软文本转语音',
+        desc: '',
+        link: 'https://azure.microsoft.com/zh-cn/products/cognitive-services/text-to-speech/#overview'
+      },
+      {
+        icon: 'https://beta.tome.app/favicon.ico',
+        title: 'Tome',
+        desc: '基于 AI 的PPT工具',
+        link: 'https://beta.tome.app'
+      },
+      {
+        icon: 'https://www.remove.bg/favicon-32x32.png?v=YAXaAv7pao',
+        title: 'RemoveBg',
+        desc: '抠图AI',
+        link: 'https://www.remove.bg'
+      },
+      {
+        icon: 'https://storage.googleapis.com/fliki/public/favicon/favicon-32x32.png',
+        title: 'Fliki',
+        desc: '视频AI',
+        link: 'https://fliki.ai'
+      },
+      {
+        icon: 'https://www.autodraw.com/assets/images/favicon.png',
+        title: 'AutoDraw',
+        desc: '设计AI',
+        link: 'https://www.autodraw.com'
+      },
+      {
+        icon: 'https://palette.fm/favicon.png',
+        title: 'Affinity Designer',
+        desc: '调色AI',
+        link: 'https://palette.fm'
+      },
+      {
+        icon: 'https://saasaitools.com/storage/2022/11/cropped-sai_favicon_white-32x32.png',
+        title: 'AI-tools',
+        desc: 'AI工具收录',
+        link: 'https://saasaitools.com'
+      },
+      {
+        icon: 'https://17yongai.com/wp-content/uploads/2023/02/logo.png',
+        title: '一起用AI',
+        desc: 'AI工具收录-绘画向',
+        link: 'https://17yongai.com'
+      },
+      {
+        icon: 'https://www.aiyjs.com/wp-content/uploads/2023/02/cropped-AI研究所-150x150.jpg',
+        title: 'AI研究所',
+        desc: 'AI资讯',
+        link: 'https://www.aiyjs.com'
       }
     ]
   },
@@ -344,6 +434,12 @@ export const homeLinkData: LinkGroup[] =  [
         title: 'Svelte',
         desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',
         link: 'https://svelte.dev'
+      },
+      {
+        icon: 'https://pixijs.com/images/favicon.png',
+        title: 'pixijs',
+        desc: '2Dwebgl渲染库',
+        link: 'https://pixijs.com'
       }
     ]
   },
@@ -452,4 +548,68 @@ export const homeLinkData: LinkGroup[] =  [
       }
     ]
   },
+  {
+    title: "图标库",
+    children: [
+      {
+        icon: 'https://www.iconfont.cn/favicon.ico',
+        title: 'Iconfont',
+        desc: '阿里巴巴矢量图标库',
+        link: 'https://www.iconfont.cn'
+      },
+      {
+        icon: 'https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg',
+        title: 'IconPark',
+        desc: '',
+        link: 'https://iconpark.oceanengine.com'
+      },
+      {
+        icon: 'https://maxst.icons8.com/vue-static/landings/primary-landings/favs/icons8_fav_32×32.png',
+        title: 'Icons8',
+        desc: '',
+        link: 'https://icons8.com'
+      },
+      {
+        icon: 'https://fontawesome.dashgame.com/assets/ico/favicon.ico',
+        title: 'FontAwesome',
+        desc: '',
+        link: 'https://fontawesome.dashgame.com'
+      },
+    ]
+  },
+  {
+    title: "字体相关",
+    children: [
+      {
+        icon: 'https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/favicon.svg',
+        title: 'Google Fonts',
+        desc: '谷歌字体',
+        link: 'https://fonts.google.com'
+      },
+      {
+        icon: 'https://www.fontspace.com/favicon-32x32.png?v=00Bdv4Q5g6',
+        title: 'Fontspace',
+        desc: '免费字体',
+        link: 'https://www.fontspace.com'
+      },
+      {
+        icon: 'https://www.mixfont.com/favicons/favicon-32x32.png',
+        title: 'Mixfont',
+        desc: '自制字体',
+        link: 'https://www.mixfont.com'
+      },
+      {
+        icon: 'https://cloudconvert.com/images/logo_flat_32.png',
+        title: 'OTF to TTF',
+        desc: '转换格式',
+        link: 'https://cloudconvert.com/otf-to-ttf'
+      },
+      {
+        icon: 'https://github.com/fluidicon.png',
+        title: 'FontMin',
+        desc: '生成常用字体包',
+        link: 'https://github.com/ecomfe/fontmin'
+      }
+    ]
+  }
 ];

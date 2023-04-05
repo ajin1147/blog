@@ -1,8 +1,16 @@
 export default {
   "/document/": [
     {
-      text: "必备插件",
-      link: "/document/plugin",
+      text: "配置及插件",
+      link: "/document/configAndPlugin",
+    },
+    {
+      text: "githubAction",
+      link: "/document/githubAction",
+    },
+    {
+      text: "小问题合集",
+      link: "/document/small",
     },
     {
       text: "前端",
@@ -31,10 +39,14 @@ export default {
       ],
     },
   ],
-  // '/linux/': [
-  //   {
-  //     text: 'linuxsa',
-  //     link: '/'
-  //   }
-  // ]
+  '/life/': [
+    {
+      text: '锻炼',
+      link: '/life/exercise'
+    },
+    {
+      text: '人为什么不快乐',
+      link: '/life/whySad'
+    }
+  ]
 };

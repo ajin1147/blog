@@ -126,17 +126,18 @@
 .VPDoc.has-aside .content-container {
   max-width: none !important;
 }
-.VPDoc > .container {
-  @media (min-width: 1240px) {
+@media (min-width: 1240px) {
+  .VPDoc > .container {
     display: flex;
-    > .aside{
-      display: block !important;
-    }
-    .VPDocOutlineDropdown {
-      display: none !important;
-    }
+  }
+  .VPDoc > .container > .aside {
+    display: block !important;
+  }
+  .VPDoc > .container .VPDocOutlineDropdown {
+    display: none !important;
   }
 }
+
 .VPDoc > .container > .content {
   padding-left: 0 !important;
   padding-right: 0 !important;

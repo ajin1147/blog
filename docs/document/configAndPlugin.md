@@ -1,5 +1,14 @@
-## 包管理相关
-### nrm
+## 配置
+### git
+#### git提交区分文件名大小写
+```bash
+git config core.ignorecase false
+```
+
+
+## 插件
+### 包管理相关
+#### nrm
 快速切换npm源
 ```bash
 # npm i nrm -g（备用，这种方式看不到选择的星号）
@@ -9,7 +18,7 @@ nrm ls
 # 切换源
 nrm use taobao
 ```
-### npkill
+#### npkill
 快速删除node_modules
 ```bash
 npm install npkill -g
@@ -19,7 +28,7 @@ npx npkill
 # 请在cmd 或 powershell 中使用
 npkill
 ```
-### patch-package
+#### patch-package
 修改node_modules中的包，然后打补丁
 ```bash
 npm install patch-package
@@ -29,14 +38,14 @@ npx patch-package 包名
 # 之后在package.json中script添加命令 "postinstall": "patch-package"
 # 之后执行npm install，会自动打补丁
 ```
-### depcheck
+#### depcheck
 检查项目中缺少的依赖包以及没有使用到的依赖包
 ```bash
 npm install depcheck -g
 # 根目录执行
 depcheck
 ```
-### ni
+#### ni
 自动检测包管理工具
 ```bash
 npm install ni -g
@@ -44,8 +53,8 @@ npm install ni -g
 # 相当于npm install || yarn install || pnpm install
 ni
 ```
-## Node相关
-### nvm
+### Node相关
+#### nvm
 node版本管理\
 \
 win：
@@ -92,7 +101,7 @@ nvm use v14.17.6
 # 卸载指定版本
 nvm uninstall v14.17.6
 ```
-### nodemon
+#### nodemon
 监听文件变化，自动重启node服务
 ```bash
 npm install nodemon -g
@@ -102,6 +111,12 @@ nodemon xxx.js
 ::: tip
 如果出现无权限。用管理员身份打开powerShell，输入set-ExecutionPolicy RemoteSigned，选A或者Y
 :::
+
+## chat-gpt常用指令模式
+### 4A
+Actor角色 - Aim目标 - Ask提要求 - Addition补充
+### 4W
+What我的情况是 - Will我想要 - Who你是谁 - Want我要你
 
 
 

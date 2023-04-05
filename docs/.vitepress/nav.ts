@@ -1,5 +1,5 @@
 export default [
   { text: '首页', link: '/' },
-  { text: '文档', link: '/document/plugin' },
-  // { text: '插件', link: '/linux/' },
+  { text: '文档', link: '/document/configAndPlugin' },
+  { text: '生活', link: '/life/exercise' }
 ]
