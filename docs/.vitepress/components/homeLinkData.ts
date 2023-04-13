@@ -75,10 +75,16 @@ export const homeLinkData: LinkGroup[] =  [
     title: 'AI 导航',
     children: [
       {
-        icon: '',
+        icon: 'https://chat.openai.com/favicon-32x32.png',
         title: 'ChatGPT',
         desc: '基于 GPT 的聊天机器人',
         link: 'https://chat.openai.com/chat'
+      },
+      {
+        icon: 'https://a.slack-edge.com/5f35cf0/img/icons/favicon-32-ua.png',
+        title: 'Slack',
+        desc: '基于 GPT 的聊天机器人',
+        link: 'https://slack.com/intl/zh-cn/'
       },
       {
         icon: 'https://www.notion.so/images/logo-ios.png',
