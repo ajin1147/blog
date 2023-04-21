@@ -39,6 +39,12 @@ export default {
       ],
     },
   ],
+  '/interview/': [
+    {
+      text: 'js',
+      link: '/interview/js'
+    },
+  ],
   '/life/': [
     {
       text: '锻炼',
