@@ -44,6 +44,14 @@ export default {
       text: 'js',
       link: '/interview/js'
     },
+    {
+      text: 'css',
+      link: '/interview/css'
+    },
+    {
+      text: 'react',
+      link: '/interview/react'
+    },
   ],
   '/life/': [
     {
