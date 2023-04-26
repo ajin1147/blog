@@ -38,3 +38,31 @@ requestIdleCallback主要用于实现React Fiber的调度器。React Fiber是一
 | index | 当前节点在兄弟节点中的索引 |
 | ref | ref引用 |
 | pendingWorkPriority | 当前节点的优先级 |
+
+## 性能指标及达标标准
+1. 启动时间（Time-to-Interactive）：应用成功加载并准备好用户交互所需的时间。
+
+2. 首次渲染时间（First Contentful Paint）：应用首次绘制内容到屏幕上所需的时间。
+
+3. 交互渲染时间（Time-to-Interactive）：在应用加载后，应用响应用户交互事件（例如单击按钮或者输入内容）所需的时间。
+
+4. 页面大小（Page Size）：应用的总下载大小。对于客户端渲染（Client-side rendering）的应用，通常需要下载所有 JavaScript 和 CSS 等资源，以及基于数据动态生成的内容等。
+
+5. 首次字节时间（First Byte Time）：应用的第一个字节下载到客户端的时间。
+
+6. 文件缓存（File Caching）：受浏览器缓存影响的页面资源。
+
+7. 白屏时间（White Screen Time）：浏览器空白页面加载完成到首次渲染内容开始渲染时的时间。
+
+---
+组件渲染时间应尽量保持在50ms以内。
+每个页面的JavaScript的响应时间应该低于500ms。
+页面的总大小应该尽量控制在1MB以内。
+内存使用情况在不稳定的情况下应该尽量保持在100MB以下。
+
+### 谷歌web vitals指标和达标标准
+* LCP（Largest Contentful Paint）：最大内容渲染时间，用于衡量页面加载性能，即页面中最大的元素渲染完成的时间，通常是图片或者视频等元素。达标标准：LCP 应该在 2.5 秒内完成。
+
+* FID（First Input Delay）：首次输入延迟，用于衡量页面的交互性能，即用户首次与页面交互到页面响应交互的时间。达标标准：FID 应该在 100 毫秒内完成。
+
+* CLS（Cumulative Layout Shift）：累计布局偏移，用于衡量页面的视觉稳定性，即页面中元素发生布局偏移的次数和程度。达标标准：CLS 应该小于 0.1。

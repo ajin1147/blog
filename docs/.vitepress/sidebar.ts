@@ -57,6 +57,10 @@ export default {
       link: '/interview/react'
     },
     {
+      text: 'git',
+      link: '/interview/git'
+    },
+    {
       text: '计算机基础',
       link: '/interview/计算机基础'
     },
