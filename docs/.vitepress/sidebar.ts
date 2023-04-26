@@ -49,8 +49,20 @@ export default {
       link: '/interview/css'
     },
     {
+      text: 'vue',
+      link: '/interview/vue'
+    },
+    {
       text: 'react',
       link: '/interview/react'
+    },
+    {
+      text: '计算机基础',
+      link: '/interview/计算机基础'
+    },
+    {
+      text: '打包构建',
+      link: '/interview/打包构建'
     },
   ],
   '/life/': [
