@@ -189,7 +189,7 @@ onMounted(() => {
 ```
 
 ## 生命周期
-与 vue2 相比，vue3 除了 setup 以外所有生命周期名前加 on ，setup 代替了 beforeCreate 和 created ，beforeUpdate 和 updated 更名为 onBeforeUnmount 和 onUnmounted ，以及新增了 onRenderTracked 和 onRenderTriggered 用于开发环境调试的钩子。
+与 vue2 相比，vue3 除了 setup 以外所有生命周期名前加 on ，setup 代替了 beforeCreate 和 created beforeDestroy 和 destroyed 更名为 onBeforeUnmount 和 onUnmounted ，以及新增了 onRenderTracked 和 onRenderTriggered 用于开发环境调试的钩子。
 | 生命周期 | 执行时机 |
 | --- | --- |
 | setup | 组件初始化时执行 |

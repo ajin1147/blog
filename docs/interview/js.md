@@ -558,3 +558,10 @@ function min(arr) {
 7. 充分利用浏览器特性：使用浏览器缓存、HTTP2、WebWorker、LocalStorage等
 
 8. 避免阻塞渲染：使用懒加载、延迟加载等手段，避免阻塞页面渲染
+
+
+## 两种路由模式
+### hash模式
+通过 URL 的 hash 属性来实现路由，其原理是在 URL 后面加上一个 # 号，# 后面的内容被称作 hash。浏览器对于这种 URL 不会向服务器请求数据，只会在本地进行跳转，因此页面刷新后 hash 部分不会丢失。Hash 模式可以使用 onhashchange 事件来监听 hash 的变化，从而实现前端路由。例如，当点击导航条上某个链接时，就可以更改 URL 的 hash 部分，页面只会进行变化而不会进行真正的重新加载
+### history模式
+利用 HTML5 的 history API 来实现路由，其原理是通过 pushState() 和 replaceState() 方法改变 URL，并在浏览器历史记录中添加或替换当前页面的状态，从而实现前端路由。与 Hash 模式不同的是，History 模式可以使 URL 更加自然和美观。例如，我们可以使用类似 /home 或 /about 的 URL 地址来访问对应的页面。但是需要注意的是，使用 History 模式时，刷新页面会从服务器端重新请求数据
