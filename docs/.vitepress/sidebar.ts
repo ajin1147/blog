@@ -1,6 +1,10 @@
 export default {
   "/document/": [
     {
+      text: "一些库",
+      link: "/document/library",
+    },
+    {
       text: "配置及插件",
       link: "/document/configAndPlugin",
     },
