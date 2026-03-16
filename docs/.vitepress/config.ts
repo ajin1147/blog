@@ -5,7 +5,7 @@ import nav from './nav'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  outDir: '../dist',
+  outDir: '../../dist',
   title: "Rain Blog",
   lang: "zh-CN",
   description: "record something",
